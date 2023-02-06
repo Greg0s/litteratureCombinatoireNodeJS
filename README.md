@@ -1,4 +1,4 @@
-# litteratureCombinatoireNodeJS
+# Littérature & combinatoire - Node JS
 
 By Emma Veauvy, Juliette Jeannin, Lucie Augier, Grégoire Tinnes
 
