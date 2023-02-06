@@ -7,10 +7,9 @@ const io = require('socket.io')(http, {
 })
 
 io.on('connection', (socket) => {
-  socket.on("msg", (data) => {
-    socket.broadcast.emit('event', data);
+  socket.on("clickBristol", () => {
+    socket.broadcast.emit('receiveEvent');
   });
-
 });
 
 http.listen(5000, () => {
