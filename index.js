@@ -10,6 +10,9 @@ io.on('connection', (socket) => {
   socket.on("clickBristol", () => {
     socket.broadcast.emit('receiveEvent');
   });
+  socket.on("restartBristol", () => {
+    socket.broadcast.emit('receiveRestart');
+  });
 });
 
 http.listen(5000, () => {
